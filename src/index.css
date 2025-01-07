@@ -6,7 +6,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  background-color: #9BF6FF;
+  background-color: #C0A9C6;
   font-family: "Playwrite AU SA", serif;
   font-optical-sizing: auto;
   font-weight: 100;
@@ -25,7 +25,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: #a2d2ff;
+  background-color: #7B4D8E;
   color: white;
   position: fixed;
   top: 0;
