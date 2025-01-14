@@ -1,44 +1,50 @@
-import { Link, NavLink } from "react-router-dom"
-import { HiOutlineCamera } from "react-icons/hi2";
-
+import { NavLink } from "react-router-dom";
+import { FaSquareFacebook } from "react-icons/fa6";
+import { RiInstagramFill } from "react-icons/ri";
 
 export default function Header() {
+  const activeStyles = {
+    fontWeight: "bold",
+    textDecoration: "underline",
+    color: "#77747E",
+  };
 
-    const activeStyles = {
-        fontWeight: "bold",
-        textDecoration: "underline",
-        color: "#161616"
-    }
-
-    return (
-        <header className="navbar">
-            <Link className="site-logo" to="/"><HiOutlineCamera/></Link>
-            <nav>
-                <NavLink
-                    to="/"
-                    style={({ isActive }) => isActive ? activeStyles : null}
-                >
-                    Home
-                </NavLink>
-                <NavLink
-                    to="/services"
-                    style={({ isActive }) => isActive ? activeStyles : null}
-                >
-                    Services
-                </NavLink>
-                <NavLink
-                    to="/about"
-                    style={({ isActive }) => isActive ? activeStyles : null}
-                >
-                    About
-                </NavLink>
-                <NavLink
-                    to="/contact"
-                    style={({ isActive }) => isActive ? activeStyles : null}
-                >
-                    Contact
-                </NavLink>
-            </nav>
-        </header>
-    )
+  return (
+    <header className="navbar">
+      <nav>
+        <a
+          href="https://www.facebook.com/autoSnapPhotobooth/"
+          className="site-logo"
+          target="_blank"
+        >
+          <FaSquareFacebook />
+        </a>
+        <a
+          href="https://www.instagram.com/autosnapphotobooth/"
+          className="site-logo"
+          target="_blank"
+        >
+          <RiInstagramFill />
+        </a>
+        <NavLink
+          to="/services"
+          style={({ isActive }) => (isActive ? activeStyles : null)}
+        >
+          Services
+        </NavLink>
+        <NavLink
+          to="/about"
+          style={({ isActive }) => (isActive ? activeStyles : null)}
+        >
+          About
+        </NavLink>
+        <NavLink
+          to="/contact"
+          style={({ isActive }) => (isActive ? activeStyles : null)}
+        >
+          Contact
+        </NavLink>
+      </nav>
+    </header>
+  );
 }

@@ -2,12 +2,17 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "BeatnikSF";
+  src: url('../public/BeatnikSF.ttf');
+}
+
 html,
 body {
   margin: 0;
   padding: 0;
-  background-color: #C0A9C6;
-  font-family: "Playwrite AU SA", serif;
+  background-color: #DC8AE1;
+  font-family: 'BeatnikSF', 'Courier New', Courier, monospace;
   font-optical-sizing: auto;
   font-weight: 100;
   font-style: normal;
@@ -25,7 +30,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: #7B4D8E;
+  background-color: #5A3250;
   color: white;
   position: fixed;
   top: 0;
@@ -40,12 +45,12 @@ body {
   padding: 10px;
 }
 
-.navbar a:hover {
+/* .navbar a:hover {
   background-color: #575757;
-}
+} */
 
 header .site-logo {
-  color: black;
+  color: #77747E;
   margin-right: auto;
   text-transform: uppercase;
   font-weight: 900;
@@ -54,13 +59,13 @@ header .site-logo {
 
 header a {
   text-decoration: none;
-  color: #4d4d4d;
+  color:#FDFFB6;;
   font-weight: 600;
   padding: 5px 20px;
 }
 
 header a:hover {
-  color: #161616;
+  color: #77747E;
   text-decoration: underline;
 }
 
@@ -70,10 +75,11 @@ header a:hover {
 }
 
 .footer {
+  font-size: .8em;
   background-color: #333;
   color: white;
   text-align: center;
-  padding: 10px;
+  padding: 5px;
   position: fixed;
   bottom: 0;
   width: 100%;
