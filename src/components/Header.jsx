@@ -4,9 +4,9 @@ import { RiInstagramFill } from "react-icons/ri";
 
 export default function Header() {
   const activeStyles = {
-    fontWeight: "bold",
+    fontWeight: 600,
     textDecoration: "underline",
-    color: "#77747E",
+    color: "#5D2972",
   };
 
   return (

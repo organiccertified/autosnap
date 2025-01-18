@@ -3,10 +3,23 @@
 export default function Home() {
   
     return (
-        <>
-            <h1>AutoSnap Photo Booth</h1>
-            <p>Lasting memories of your event delivered in a fun way</p>
-        </>
+        
+        <div>
+            <div>
+                <img className="homeLogo"
+                    src = '../../public/big_logo.jpg'
+                >
+                </img>
+            </div>
+            <div>
+                <img className="homeLogo"
+                        src = '../../public/photBooth_action.jpg'
+                    >
+                    </img>
+            </div>
+            
+        </div>
+    
         
     )
 }

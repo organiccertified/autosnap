@@ -7,11 +7,23 @@
   src: url('../public/BeatnikSF.ttf');
 }
 
+/* 
+* colores Pantone
+* #D3CADC
+* #c0b1cc
+* #af98bc
+* #a07fac
+* #91689b
+* #7C4E8A
+* #6d387c
+* #5D2972
+*/
+
 html,
 body {
   margin: 0;
   padding: 0;
-  background-color: #DC8AE1;
+  background-color: whitesmoke;
   font-family: 'BeatnikSF', 'Courier New', Courier, monospace;
   font-optical-sizing: auto;
   font-weight: 100;
@@ -30,8 +42,8 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: #5A3250;
-  color: white;
+  background-color: #c0b1cc;
+  color: #5D2972;
   position: fixed;
   top: 0;
   left: 0;
@@ -40,9 +52,10 @@ body {
 }
 
 .navbar a {
-  color: #FDFFB6;
+  color: #5D2972;
   text-decoration: none;
   padding: 10px;
+  font-size: 1.2em;
 }
 
 /* .navbar a:hover {
@@ -50,7 +63,7 @@ body {
 } */
 
 header .site-logo {
-  color: #77747E;
+  color: #5D2972;
   margin-right: auto;
   text-transform: uppercase;
   font-weight: 900;
@@ -72,6 +85,13 @@ header a:hover {
 .content {
   flex: 1;
   padding-top: 60px; /* Adjust this value based on the height of your navbar */
+  padding-left: 2vh;
+  padding-right: 2vh;
+}
+
+.homeLogo {
+  width: 90vw;
+  height: 100%;
 }
 
 .footer {
