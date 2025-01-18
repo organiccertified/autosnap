@@ -7,13 +7,13 @@ export default function Home() {
         <div>
             <div>
                 <img className="homeLogo"
-                    src = '../../public/big_logo.jpg'
+                    src = '../images/big_logo.jpg'
                 >
                 </img>
             </div>
             <div>
                 <img className="homeLogo"
-                        src = '../../public/photBooth_action.jpg'
+                        src = '../images/photBooth_action.jpg'
                     >
                     </img>
             </div>
